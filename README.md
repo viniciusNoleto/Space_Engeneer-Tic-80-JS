@@ -1,9 +1,9 @@
-# Space-Engeneer-Tic-80-JS
+# Space-Engineer-Tic-80-JS
 Projeto pessoal: Jogo de nave misturado com Tetris
 
-// title:  Pensar Sobre
-// author: Vini
-// desc:   Navinha + Tetris
+// title:  Space Engineer
+// author: Vinicius Noleto
+// desc:   Ship + Tetris
 // script: js
 
 var up = 0
@@ -1205,6 +1205,7 @@ function wayToGoEngine(){
 					if(objects[j].r == wayToBlock[i][5][0]
 					|| objects[j].r == wayToBlock[i][5][1]){
 					 player.addPts(10)
+						if(player.lifes<5)player.lifes+=0.05
 						blockSTimer--
 					}else{
 					 player.addPts(5)
